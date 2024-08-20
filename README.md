@@ -15,7 +15,7 @@ To get started with this project, follow the steps below:
 First, clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/StevePuma/composesdk-react-card.git
+git clone https://github.com/sisensers/ComposeSDK-React-Card.git
 ```
 
 ### 2. Add the `.env` File
