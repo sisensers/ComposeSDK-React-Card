@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# ComposeSDK React Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the `ComposeSDK React Card` project, which demonstrates the usage of the Sisense SDK within a React application.
 
-## Available Scripts
+![CustomCard](https://github.com/user-attachments/assets/34b04d40-ebd1-4831-b097-4d820fa4c1d5)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To get started with this project, follow the steps below:
 
-### `npm test`
+### 1. Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First, clone the repository to your local machine using the following command:
 
-### `npm run build`
+```bash
+git clone https://github.com/StevePuma/composesdk-react-card.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Add the `.env` File
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You will need to add a `.env` file to the root directory of the project. This file will contain the Sisense URL and token required to run the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a `.env` file in the root directory and add the following lines:
 
-### `npm run eject`
+```env
+REACT_APP_SISENSE_URL=your-sisense-url
+REACT_APP_SISENSE_TOKEN=your-sisense-token
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Replace `your-sisense-url` and `your-sisense-token` with the appropriate values.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Obtain a Sisense Instance and Token
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To utilize this project, you will need access to a Sisense instance.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Trial Users**: If you do not have a Sisense instance, you can register for a free trial [here](https://www.sisense.com/platform/compose-sdk-free-trial/). After registering, you'll receive a Sisense URL and API token.
 
-## Learn More
+- **Existing Customers**: If you are a Sisense customer, you can use your existing Sisense URL and API token. You can obtain your API token by:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  1. Accessing your profile information by clicking on the profile icon in the top right of the Fusion platform.
+  2. Alternatively, you can generate a token using the following command in your local terminal:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     ```bash
+     npx @sisense/sdk-cli@latest get-api-token --url <your_instance_url> --username <username>
+     ```
+
+### 4. Save the `.env` File
+
+After adding the Sisense URL and token to the `.env` file, make sure to save it.
+
+### 5. Install Dependencies
+
+Navigate to the project directory and install the necessary dependencies by running:
+
+```bash
+npm install
+```
+
+### 6. Run the Application
+
+Once the dependencies are installed, start the development server with:
+
+```bash
+npm start
+```
+
+This will run the application locally, and you can view it in your browser at `http://localhost:3000`.
+
+## Project Structure
+
+The primary components of the application are located in the `components` folder. This is where you'll find the main building blocks of the application.
